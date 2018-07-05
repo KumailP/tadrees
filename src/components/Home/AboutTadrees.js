@@ -55,6 +55,7 @@ const Content = styled.div`
   letter-spacing: 1px;
 
   & h1 {
+    margin: 0px;
     text-transform: uppercase;
     color: #282827;
   }
