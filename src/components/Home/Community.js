@@ -52,7 +52,7 @@ const Image = styled.div`
 `;
 
 const Text = styled.div`
-  background-color: #eeeeee;
+  background-color: #f7f7f7;
   flex: 3;
   ${props =>
     props.right
@@ -64,7 +64,7 @@ const Text = styled.div`
   letter-spacing: 1px;
   color: #444444;
   margin-top: 90px;
-  box-shadow: 2px 2px 10px #aeaeae;
+  box-shadow: 1px 1px 2px #aeaeae;
   h2 {
     text-transform: uppercase;
     letter-spacing: 1px;

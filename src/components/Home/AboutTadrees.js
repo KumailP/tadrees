@@ -33,7 +33,7 @@ export default () => {
 };
 
 const Background = styled.div`
-  background-color: #eeeeee;
+  background-color: #f7f7f7;
   padding: 50px 0px 40px 0px;
 `;
 
