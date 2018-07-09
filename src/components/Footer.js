@@ -25,7 +25,6 @@ const BottomFooter = styled.div`
 `;
 
 const TopFooter = styled.div`
-  padding: 20px;
   background-color: #181817;
   color: white;
 `;
@@ -34,10 +33,12 @@ const Container = styled.div`
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 `;
 
 const Social = styled.div`
+  margin: 40px;
   & ul {
     list-style-type: none;
     padding: 0px;
@@ -60,6 +61,11 @@ const Social = styled.div`
 `;
 
 const Newsletter = styled.div`
+  margin: 40px;
+  & h1 {
+    margin-bottom: 18px;
+  }
+
   & input {
     line-height: 2;
     padding: 5px;
@@ -76,14 +82,17 @@ const Newsletter = styled.div`
     border: 0px;
     letter-spacing: 1px;
     cursor: pointer;
+    transition: 0.3s;
 
     &:hover {
-      background-color: #f05a28;
+      background-color: #a3411c;
+      transition: 0.3s;
     }
   }
 `;
 
 const Contact = styled.div`
+  margin: 40px;
   & p {
     font-size: 14px;
     letter-spacing: 1px;

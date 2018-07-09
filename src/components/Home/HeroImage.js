@@ -28,6 +28,8 @@ export default () => {
 const HeroImage = styled.div`
   background-image: url("images/hero-small.jpg");
   height: 600px;
+  margin-top: 135px;
+  // height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,10 +49,12 @@ const HeroImage = styled.div`
   @media (max-width: 767px) {
     // mobile
     height: 300px;
+    margin-top: 120px;
   }
   @media (max-width: 991px) {
     // tablet
     height: 400px;
+    margin-top: 110px;
   }
 `;
 

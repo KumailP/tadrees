@@ -55,9 +55,7 @@ const RightItem = styled.div`
   position: relative;
 `;
 
-const RightText = styled.p``;
-
-const RightBtn = styled(Button)``;
+const RightText = styled.div``;
 
 const ReadMoreBtn = styled(Button)`
   && {
@@ -118,7 +116,6 @@ export default () => {
                 Read More
               </ReadMoreBtn>
             </RightText>
-            <RightBtn />
           </RightItem>
         </Content>
       </Container>

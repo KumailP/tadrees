@@ -97,7 +97,7 @@ class Navbar extends Component {
       : classes.verticalBtn;
     return (
       <AppBar
-        position="sticky"
+        position="fixed"
         className={shrinkNav ? classes.AppBarBgShrink : classes.AppBarBg}
       >
         <div>
