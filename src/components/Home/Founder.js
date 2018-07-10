@@ -1,6 +1,13 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 import styled from "styled-components";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const Icon = styled(FontAwesomeIcon)`
+  font-size: 2em;
+  color: #ea5d29;
+`;
 
 const Header = styled.div`
   text-align: center;
@@ -45,17 +52,21 @@ const LeftHeading = styled.p``;
 const LeftSubHeading = styled.p``;
 
 const RightItem = styled.div`
+  border-top: 5px solid #ea5d29;
   flex: 1;
   background-color: #eeeeee;
-  padding: 20px;
+  padding: 0px 20px;
   text-align: justify;
   text-justify: inter-word;
   letter-spacing: 1px;
   line-height: 1.5;
   position: relative;
+  margin: 20px 0px;
 `;
 
-const RightText = styled.div``;
+const RightText = styled.div`
+  margin-bottom: 20px;
+`;
 
 const ReadMoreBtn = styled(Button)`
   && {
@@ -87,12 +98,13 @@ export default () => {
           <RightItem>
             <RightText>
               <p>
-                I used to see them daily, at the main gate of my university i.e.
-                NED University, selling tissue papers. I saw them begging as
-                well. Like every passerby, they would come to bug me as well,
-                while I always scolded them and asked them to go away since I
-                always got irritated of their clingy behavior. There were many
-                of them, all aged between 9-10 years.
+                <Icon icon={faQuoteLeft} /> I used to see them daily, at the
+                main gate of my university i.e. NED University, selling tissue
+                papers. I saw them begging as well. Like every passerby, they
+                would come to bug me as well, while I always scolded them and
+                asked them to go away since I always got irritated of their
+                clingy behavior. There were many of them, all aged between 9-10
+                years.
               </p>
               <p>
                 One day, I saw something strange. A group of those kids had
@@ -112,10 +124,10 @@ export default () => {
                 That was the moment I decided that I have to do something, for
                 them.
               </p>
-              <ReadMoreBtn color="primary" variant="contained">
-                Read More
-              </ReadMoreBtn>
             </RightText>
+            <ReadMoreBtn color="primary" variant="contained">
+              Read More
+            </ReadMoreBtn>
           </RightItem>
         </Content>
       </Container>

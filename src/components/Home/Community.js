@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Default, Mobile } from "../MediaQueries";
 
 const Header = styled.div`
   text-align: center;
@@ -35,11 +36,13 @@ const Content = styled.div`
 
 const Item = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 const Image = styled.div`
   flex: 2;
   z-index: 1000;
+  min-width: 300px; // test
   max-width: 100%;
   height: 450px;
   padding: 0;
@@ -49,16 +52,25 @@ const Image = styled.div`
   background-size: cover;
   position: relative;
   ${props => (props.right ? "margin-left: -10px" : "margin-right: -10px")};
+
+  
+  @media (max-width: 767px) {
+    // mobile
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: -50px;
+  }
 `;
 
 const Text = styled.div`
   background-color: #f7f7f7;
+  min-width: 200px; // test
   flex: 3;
   ${props =>
     props.right
       ? "border-left: 5px solid #ea5d29"
       : "border-right: 5px solid #ea5d29"};
-  height: 200px;
+  max-height: 200px;
   padding: 40px;
   position: relative;
   letter-spacing: 1px;
@@ -83,6 +95,11 @@ const Text = styled.div`
   p {
     text-align: justify;
     text-justify: inter-word;
+  }
+  @media (max-width: 767px) {
+    // mobile
+    margin-top: 0px;
+    max-height: 500px;
   }
 `;
 
@@ -115,6 +132,9 @@ export default () => {
           </Item>
 
           <Item>
+            <Mobile>
+              <Image ImgUrl="images/3-new.png" left />
+            </Mobile>
             <Text right>
               <h2>Winter Campaign '17</h2>
               <h4>
@@ -128,7 +148,9 @@ export default () => {
                 people
               </p>
             </Text>
-            <Image ImgUrl="images/3-new.png" right />
+            <Default>
+              <Image ImgUrl="images/3-new.png" right />
+            </Default>
           </Item>
         </Content>
       </Container>

@@ -65,7 +65,7 @@ const HoverNav = styled.div`
     & li {
       display: inline-block;
       padding: 15px 20px;
-      font-size: 14px;
+      font-size: 13px;
       letter-spacing: 1px;
       transition: 0.5s;
 

@@ -47,8 +47,9 @@ const Container = styled.div`
 
 const Content = styled.div`
   flex: 1;
+  min-width: 45%;
   padding: 30px 0px;
-  margin: 0px 50px;
+  margin: 0px 15px;
   position: relative;
 
   font-family: "Roboto", sans-serif;
@@ -83,7 +84,9 @@ const ReadMoreBtn = styled(Button)`
 
 const Video = styled.div`
   flex: 1;
+  min-width: 45%;
   min-height: 100%;
+  margin: 0px 15px;
 
   & iframe {
     min-width: 100%;
