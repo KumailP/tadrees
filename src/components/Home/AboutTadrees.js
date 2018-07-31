@@ -57,7 +57,6 @@ const Content = styled.div`
 
   & h1 {
     margin: 0px;
-    text-transform: uppercase;
     color: #282827;
   }
 

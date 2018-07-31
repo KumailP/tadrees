@@ -7,7 +7,6 @@ const Header = styled.div`
   margin: 0 auto;
 
   & h1 {
-    text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 5px;
     color: #282827;
@@ -78,7 +77,6 @@ const Text = styled.div`
   margin-top: 90px;
   box-shadow: 1px 1px 2px #aeaeae;
   h2 {
-    text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 5px;
     color: #282827;

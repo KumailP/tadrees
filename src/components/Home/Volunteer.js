@@ -38,7 +38,6 @@ const Content = styled.div`
   font-family: "Roboto", sans-serif;
 
   & h1 {
-    text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 5px;
     & span {
