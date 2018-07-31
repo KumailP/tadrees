@@ -15,7 +15,6 @@ const Header = styled.div`
   font-family: "Roboto", sans-serif;
 
   & h1 {
-    text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 5px;
     color: #282827;
@@ -39,33 +38,80 @@ const Container = styled.div`
 
 const Content = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+  box-shadow: 1px 1px 2px #aeaeae;
 `;
 
 const LeftItem = styled.div`
-  flex: 1;
+  background-image: url("/images/founder.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 2;
+  position: relative;
+  min-height: 400px;
+  min-width: 300px;
 `;
 
-const LeftInner = styled.div``;
+const LeftInner = styled.div`
+  background-color: #f7f7f7;
+  border-left: 5px solid #ea5d29;
+  padding: 15px 30px;
+  position: absolute;
+  bottom: 20px;
+  left: -10px;
+  z-index: 200;
+  box-shadow: 1px 1px 2px #777;
 
-const LeftHeading = styled.p``;
+  & p {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    margin: 3px 10px;
+  }
 
-const LeftSubHeading = styled.p``;
+  @media (max-width: 640px) {
+    left: 10px;
+  }
+`;
+
+const LeftHeading = styled.p`
+  color: #444444;
+  font-weight: bold;
+`;
+
+const LeftSubHeading = styled.p`
+  color: #ea5d29;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+`;
 
 const RightItem = styled.div`
-  border-top: 5px solid #ea5d29;
-  flex: 1;
+  border-top: 5px solid black;
+  border-image: linear-gradient(
+      to right,
+      #f8b51f 0%,
+      #f8b51f 33%,
+      #ea5d29 33%,
+      #ea5d29 66%,
+      #006938 66%,
+      #006938 100%
+    )
+    5;
+  flex: 5;
   background-color: #eeeeee;
   padding: 0px 20px;
   text-align: justify;
   text-justify: inter-word;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   line-height: 1.5;
   position: relative;
-  margin: 20px 0px;
+  min-width: 300px;
 `;
 
 const RightText = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 `;
 
 const ReadMoreBtn = styled(Button)`
